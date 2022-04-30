@@ -1,0 +1,2 @@
+install curses
+install pandas

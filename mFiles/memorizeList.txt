@@ -1,0 +1,8 @@
+Clubs
+hearts
+spades
+diamonds
+Ace
+Jack
+Queen
+King

@@ -112,8 +112,9 @@ def practiceObjectList(curses, stdscr, NUMSDICT):
             stdscr.addstr(y, 0, currentGuess, curses.color_pair(2))
             stdscr.addstr(y, 30, value + '\n')
 
-    duration = getduration(startTime)   
-    stdscr.addstr(f'\nYour score is {score}\n')
+    duration = getduration(startTime)
+    percentage = "{:.0%}".format(score/len(NUMSDICT))
+    stdscr.addstr(f"Your score is {score}. ({percentage})\n")
     stdscr.addstr(f"Your time was {duration['minutes']} minutes and {duration['seconds']} seconds.")
     stdscr.getkey()
 
